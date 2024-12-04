@@ -1,0 +1,118 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Container to hold everything */
+.container {
+  background-color: #fff;
+  position: relative;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Increased the width */
+}
+/* Header 4 that will hold the error message when the user click on Add Item button without adding a task on the input field */
+#error-msg {
+  color: red;
+  margin-bottom: 10px;
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  top: 90px;
+  left: 160px;
+}
+/* Heading styling */
+h1 {
+  font-size: 2.5rem; /* Increased size */
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Input container for task entry */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px; /* Increased space below input section */
+}
+
+/* Input box styling */
+input[type="text"] {
+  width: 75%; /* Increased width for input box */
+  padding: 15px; /* Added padding */
+  font-size: 1.2rem; /* Increased font size */
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Add button styling */
+button {
+  padding: 15px 10px; /* Increased padding */
+  background-color: #6e00ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem; /* Increased font size */
+  cursor: pointer;
+  margin-left: 10px; /* Added space between the button and the input */
+}
+
+button:hover {
+  background-color: #5300cc;
+}
+
+/* Task list styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Task item styling */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0; /* Added padding for breathing room */
+  border-bottom: 1px solid #ddd;
+  font-size: 1.3rem; /* Slightly increased font size */
+}
+
+/* Task completion button styling */
+li button {
+  /* background-color: red; */
+  background-color: white;
+  /* color: #6e00ff; */
+  color: red;
+  font-size: 1.3rem; /* Increased size for the circle button */
+  border: none;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: rgb(245, 33, 33);
+  color: white;
+}
+
+/* Task text styling */
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+  /* color: green; */
+}
